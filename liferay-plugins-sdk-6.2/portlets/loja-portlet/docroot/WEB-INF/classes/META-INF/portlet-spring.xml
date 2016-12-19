@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="br.com.prodevelopment.lapidarios.loja.service.LojaLocalService" class="br.com.prodevelopment.lapidarios.loja.service.impl.LojaLocalServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.loja.service.LojaService" class="br.com.prodevelopment.lapidarios.loja.service.impl.LojaServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.loja.service.persistence.LojaPersistence" class="br.com.prodevelopment.lapidarios.loja.service.persistence.LojaPersistenceImpl" parent="basePersistence" />
+</beans>

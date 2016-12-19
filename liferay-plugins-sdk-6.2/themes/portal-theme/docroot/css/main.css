@@ -1,0 +1,52 @@
+@import url(base.css);
+
+@import url(application.css);
+
+@import url(layout.css);
+
+@import url(dockbar.css);
+
+@import url(navigation.css);
+
+@import url(portlet.css);
+
+@import url(extras.css);
+
+@import url(custom.css);
+
+@import url(bootstrap.min.css);
+
+@import url(bootstrap-responsive.min.css);
+
+/* para ser chamado em tudo */
+@import url(LAPIDARIOS-icons.css);
+
+/* para ser chamado em tudo */
+@import url(theme-geral.css);
+
+/* para ser chamado apenas na home */
+@import url(theme-home.css);
+
+/* para ser chamado apenas nas paginas de eventos */
+@import url(theme-agenda.css); 
+
+/* para ser chamado apenas nas paginas de slide share */
+@import url(theme-slideshare.css);
+
+/* para ser chamado apenas nas paginas de downnloads */
+@import url(theme-downloads.css);
+
+/* para ser chamado apenas na pagina dashboard */
+@import url(theme-dashboard.css);
+
+/* para ser chamado na pagina chamada internas e na home  --------------------- tem que chamar esse css na home tambem */ 
+@import url(theme-chamadas.css);  
+
+/* para ser chamado apenas na pagina de compartilhar oportunidade */ 
+@import url(theme-share.css);    
+
+/* para ser chamado apenas na pagina de compartilhar produto */ 
+@import url(theme-compartilhar-produto.css);   
+
+/* para ser chamado em tudo */
+@import url(main-responsive.css);

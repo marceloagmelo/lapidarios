@@ -1,0 +1,5 @@
+<liferay-ui:success key="mensagem.loja.adicionada.sucesso"
+	message="mensagem.loja.adicionada.sucesso" />
+<liferay-ui:success key="mensagem.loja.alterada.sucesso"
+	message="mensagem.loja.alterada.sucesso" />
+	

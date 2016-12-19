@@ -1,0 +1,19 @@
+<%
+PortletURL rowURL = renderResponse.createRenderURL();
+rowURL.setParameter("jspPage", "/html/local/cadastro.jsp");
+rowURL.setParameter("localId", String.valueOf(local.getLocalId()));
+rowURL.setParameter(Constantes.REDIRECT, Constantes.REDIRECT_VIEW_LOCAL);
+rowURL.setParameter("backURL", currentURL);
+rowURL.setParameter(Constantes.ACAO, Constantes.VIEW);
+%>
+<liferay-ui:search-container-column-text name="label.nome" buffer="buffer">
+<%
+buffer.append("<div class='ver_dados'>");
+buffer.append("<a href='");
+buffer.append(rowURL);
+buffer.append("'>");
+buffer.append(local.getNome());
+buffer.append("</a>");
+buffer.append("</div>");
+%>	
+</liferay-ui:search-container-column-text>

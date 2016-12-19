@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="br.com.prodevelopment.lapidarios.evento.model.Evento" />
+	<import class="br.com.prodevelopment.lapidarios.evento.model.EventoAgenda" />
+	<import class="br.com.prodevelopment.lapidarios.evento.model.EventoInscricao" />
+	<import class="br.com.prodevelopment.lapidarios.evento.model.EventoNaoInscrito" />
+	<import class="br.com.prodevelopment.lapidarios.evento.model.Local" />
+	<class name="br.com.prodevelopment.lapidarios.evento.model.impl.EventoImpl" table="evento">
+		<cache usage="read-write" />
+		<id name="eventoId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="modifiedUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="nome" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="descricao" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userResponsavelId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userResponsavelNome" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="versao" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="imagemId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="articleId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="br.com.prodevelopment.lapidarios.evento.model.impl.EventoAgendaImpl" table="evento_agenda">
+		<cache usage="read-write" />
+		<id name="eventoAgendaId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="modifiedUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="dataEvento" type="org.hibernate.type.TimestampType" />
+		<property name="horaEvento" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="qtdeVagas" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="qtdeVagasPreenchida" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="gratuito" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="valor" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="userResponsavelId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userResponsavelNome" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="eventoId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="eventoNome" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="localId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="localNome" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="observacao" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="versao" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="statusByUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="statusByUserName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="statusDate" type="org.hibernate.type.TimestampType" />
+		<property name="classNameId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="classPK" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+	<class name="br.com.prodevelopment.lapidarios.evento.model.impl.EventoInscricaoImpl" table="evento_inscricao">
+		<cache usage="read-write" />
+		<id name="eventoInscricaoId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="eventoAgendaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="eventoId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userNome" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="br.com.prodevelopment.lapidarios.evento.model.impl.EventoNaoInscritoImpl" table="evento_nao_inscrito">
+		<cache usage="read-write" />
+		<id name="eventoNaoInscritoId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="eventoAgendaId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="eventoId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userNome" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="br.com.prodevelopment.lapidarios.evento.model.impl.LocalImpl" table="local">
+		<cache usage="read-write" />
+		<id name="localId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="modifiedUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="nome" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endLogradouro" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endNumero" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endComplemento" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endCep" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endBairro" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endCidade" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endUf" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endPais" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="pontoReferencia" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="versao" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+	</class>
+</hibernate-mapping>

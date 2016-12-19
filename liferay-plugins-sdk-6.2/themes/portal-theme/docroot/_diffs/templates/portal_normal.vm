@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+#parse ($init)
+
+<html class="$root_css_class" dir="#language ("lang.dir")" lang="$w3c_language_id">
+
+<head>
+	<title>$the_title - $company_name</title>
+
+	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
+	
+	$theme.include($top_head_include)
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+
+	<script src="$javascript_folder/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script src="$javascript_folder/jquery.min.js"></script>
+</head>
+
+<body class="$css_class">
+
+<a href="#main-content" id="skip-to-content">#language ("skip-to-content")</a>
+
+$theme.include($body_top_include)
+
+#dockbar()
+
+<div class="container-fluid" id="wrapper">
+	<header id="banner" role="banner">
+		#if ($has_navigation || $is_signed_in)
+			#parse ("$full_templates_path/navigation.vm")
+		#end
+	</header>
+
+	<div id="content">
+		##<nav id="breadcrumbs">#breadcrumbs()</nav>
+
+		#if ($selectable)
+			$theme.include($content_include)
+		#else
+			$portletDisplay.recycle()
+
+			$portletDisplay.setTitle($the_title)
+
+			$theme.wrapPortlet("portlet.vm", $content_include)
+		#end
+	</div>
+
+	<footer id="footer" role="contentinfo">
+		<p class="powered-by">
+			###language ("powered-by") <a href="http://www.liferay.com" rel="external">Liferay</a>
+		</p>
+	</footer>
+</div>
+
+$theme.include($body_bottom_include)
+
+$theme.include($bottom_include)
+
+</body>
+
+<script src="$javascript_folder/bootstrap.min.js"></script>
+<script src="$javascript_folder/owl.carousel.min.js"></script>
+<script src="$javascript_folder/ilightbox.packed.js"></script>
+<script src="$javascript_folder/slidebars.js"></script>
+<script src="$javascript_folder/theme-lapidarios.js"></script>
+<script src="$javascript_folder/jquery.fullscreen-min.js"></script>
+<script src="$javascript_folder/jquery.mask.min.js"></script>
+<script src="$javascript_folder/main.js"></script>
+
+
+
+</html>

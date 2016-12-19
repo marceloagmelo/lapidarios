@@ -1,0 +1,84 @@
+/* line 1, ../sass/theme-chamadas.scss */
+.inner-chamadas-site {
+  background: url(../images/bg-chamadas.jpg) no-repeat center center !important;
+  height: 100%;
+  background-size: cover; }
+
+/* line 7, ../sass/theme-chamadas.scss */
+#content-chamada-internas {
+  padding: 60px 0; }
+
+/* line 11, ../sass/theme-chamadas.scss */
+.item-chamada {
+  margin-bottom: 5px; }
+
+/* line 13, ../sass/theme-chamadas.scss */
+.item-chamada .caixa {
+  background: #727171;
+  padding: 20px 45px 20px 40px; }
+
+/* line 17, ../sass/theme-chamadas.scss */
+.item-chamada .caixa p {
+  color: #fff !important;
+  font-size: 22px !important;
+  line-height: 24px !important;
+  font-style: italic !important;
+  text-align: right !important;
+  font-weight: 300 !important; }
+
+/* line 28, ../sass/theme-chamadas.scss */
+.item-chamada a h2 {
+  color: #fff !important;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  line-height: 30px !important;
+  text-align: right !important; }
+
+/* line 37, ../sass/theme-chamadas.scss */
+.item-chamada .txt-item {
+  margin-left: 10px; }
+
+/* line 41, ../sass/theme-chamadas.scss */
+.item-chamada a:hover {
+  text-decoration: none; }
+
+/* line 43, ../sass/theme-chamadas.scss */
+.item-chamada a:hover .caixa {
+  background: #d7172f !important; }
+
+/* line 46, ../sass/theme-chamadas.scss */
+.item-chamada a:hover .titulo-caixa, .item-chamada a:hover .titulo-caixa-especial {
+  color: #d7172f !important; }
+
+/* line 51, ../sass/theme-chamadas.scss */
+.item-chamada .titulo-caixa {
+  font-size: 158px !important;
+  line-height: 1em !important;
+  font-weight: 400 !important;
+  color: #727171 !important;
+  text-transform: uppercase !important;
+  padding-left: 12px !important; }
+
+/* line 60, ../sass/theme-chamadas.scss */
+.item-chamada .titulo-caixa-especial {
+  padding-left: 12px !important;
+  font-size: 71px !important;
+  font-weight: 400 !important;
+  color: #727171 !important;
+  text-transform: uppercase !important; }
+
+/* line 69, ../sass/theme-chamadas.scss */
+.fora-caixa {
+  display: table; }
+
+/* line 71, ../sass/theme-chamadas.scss */
+.fora-caixa .out-caixa, .fora-caixa .txt-item {
+  vertical-align: middle;
+  display: table-cell;
+  float: none; }
+
+/* line 78, ../sass/theme-chamadas.scss */
+#content-chamada-internas .inner-auto {
+  display: table-cell;
+  vertical-align: middle; }
+

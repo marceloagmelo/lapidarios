@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="br.com.prodevelopment.lapidarios.lojaindicada.model.LojaIndicada">
+		<field name="uuid" type="String" />
+		<field name="lojaIndicadaId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createUserId" type="long" />
+		<field name="modifiedUserId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="idLoja" type="String" />
+		<field name="lojaIndicadaAtual" type="Boolean" />
+	</model>
+</model-hints>

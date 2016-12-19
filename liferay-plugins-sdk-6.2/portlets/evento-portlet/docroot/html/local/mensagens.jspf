@@ -1,0 +1,5 @@
+<liferay-ui:success key="mensagem.local.adicionado.sucesso"
+	message="mensagem.local.adicionado.sucesso" />
+<liferay-ui:success key="mensagem.local.alterado.sucesso"
+	message="mensagem.local.alterado.sucesso" />
+	

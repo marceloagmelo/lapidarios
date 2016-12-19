@@ -1,0 +1,74 @@
+/* line 1, ../sass/theme-dashboard.scss */
+.page-dashboard {
+  background-image: url("../images/bg-dashboard.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+/* line 12, ../sass/theme-dashboard.scss */
+.coluna {
+  width: 20%;
+  float: left;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-bottom: 10px;
+}
+/* line 18, ../sass/theme-dashboard.scss */
+.coluna .inner-item {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 50px 25px 20px 25px;
+  min-height: 168px;
+  border: #ccc solid 1px;
+}
+/* line 25, ../sass/theme-dashboard.scss */
+.coluna .icon {
+  font-size: 57px;
+  color: #cb0032;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  line-height: 44px;
+  vertical-align: middle;
+}
+/* line 35, ../sass/theme-dashboard.scss */
+.coluna .text-item {
+  color: #cb0032;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+/* line 42, ../sass/theme-dashboard.scss */
+.coluna .icon-share {
+  font-size: 42px;
+  line-height: 50px;
+  position: relative;
+  top: -10px;
+}
+/* line 49, ../sass/theme-dashboard.scss */
+.coluna a:hover {
+  text-decoration: none;
+}
+/* line 51, ../sass/theme-dashboard.scss */
+.coluna a:hover .inner-item {
+  background: #cb0032;
+}
+/* line 53, ../sass/theme-dashboard.scss */
+.coluna a:hover .inner-item .icon {
+  color: #fff;
+}
+/* line 56, ../sass/theme-dashboard.scss */
+.coluna a:hover .inner-item .text-item {
+  color: #fff;
+}
+
+/* line 63, ../sass/theme-dashboard.scss */
+.logo-dashboard {
+  margin: 30px 0 30px 7px;
+  clear: both;
+  float: left;
+}

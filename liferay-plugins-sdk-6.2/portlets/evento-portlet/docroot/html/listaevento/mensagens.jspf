@@ -1,0 +1,3 @@
+<liferay-ui:success key="mensagem.inscricao.realizada.sucesso"
+	message="mensagem.inscricao.realizada.sucesso" />
+<liferay-ui:error exception="<%= EventoQtdeVagasPreenchidaException.class %>" message="mensagem.vagas.preenchida" />

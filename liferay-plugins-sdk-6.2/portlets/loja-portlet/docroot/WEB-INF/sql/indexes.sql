@@ -1,0 +1,15 @@
+create index IX_11C36599 on loja (cnpj);
+create index IX_859C48E8 on loja (companyId);
+create index IX_B6C8B0C2 on loja (companyId, groupId);
+create index IX_CA0530EA on loja (companyId, groupId, classNameId, nomeFantasia, status);
+create index IX_AFA4C6B2 on loja (companyId, groupId, classNameId, status);
+create index IX_1EFAD81 on loja (companyId, groupId, cnpj, status);
+create index IX_80F91160 on loja (companyId, groupId, nomeFantasia, status);
+create index IX_C607E642 on loja (companyId, groupId, ordemIndicada, status);
+create index IX_D58C6A1B on loja (companyId, groupId, ordemIndicadaAtual, status);
+create index IX_1269967A on loja (companyId, groupId, razaoSocial, status);
+create index IX_D48D3A78 on loja (nomeFantasia);
+create index IX_9FB225D6 on loja (razaoSocial);
+create index IX_EA66CE74 on loja (uuid_);
+create index IX_6E56534 on loja (uuid_, companyId);
+create unique index IX_D52DA8B6 on loja (uuid_, groupId);

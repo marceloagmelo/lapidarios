@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="br.com.prodevelopment.lapidarios.loja" auto-namespace-tables="false">
+	<author>Marcelo Melo</author>
+	<namespace>loja</namespace>
+
+	<entity name="Loja" table="loja" uuid="true" local-service="true"
+		remote-service="true" trash-enabled="true">
+
+		<!-- PK fields -->
+
+		<column name="lojaId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="createUserId" type="long" />
+		<column name="modifiedUserId" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="razaoSocial" type="String" />
+		<column name="nomeFantasia" type="String" />
+		<column name="observacao" type="String" localized="true" />
+		<column name="cnpj" type="String" />
+		<column name="endLogradouro" type="String" />
+		<column name="endNumero" type="String" />
+		<column name="endComplemento" type="String" />
+		<column name="endCep" type="String" />
+		<column name="endBairro" type="String" />
+		<column name="endCidade" type="String" />
+		<column name="endUf" type="String" />
+		<column name="endPais" type="String" />
+		<column name="versao" type="double" />
+		<column name="ordemIndicada" type="int" />
+		<column name="ordemIndicadaAtual" type="boolean" />
+		<column name="status" type="int" />
+		<column name="statusByUserId" type="long" />
+		<column name="statusByUserName" type="String" />
+		<column name="statusDate" type="Date" />
+		<column name="classNameId" type="long" />
+		<column name="classPK" type="long" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="nomeFantasia" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="Company" return-type="Collection">
+			<finder-column name="companyId" />
+		</finder>
+		<finder name="CG" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="RazaoSocial" return-type="Collection">
+			<finder-column name="razaoSocial" comparator="LIKE" />
+		</finder>
+
+		<finder name="CG_RazaoSocial" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="razaoSocial" comparator="LIKE" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="NomeFantasia" return-type="Collection">
+			<finder-column name="nomeFantasia" comparator="LIKE" />
+		</finder>
+
+		<finder name="CG_NomeFantasia" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="nomeFantasia" comparator="LIKE" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="CNPJ" return-type="Loja">
+			<finder-column name="cnpj" />
+		</finder>
+
+		<finder name="CG_CNPJ" return-type="Loja">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="cnpj" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="CG_OrdemIndicada" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="ordemIndicada" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+		
+		<finder name="CG_OrdemIndicadaAtual" return-type="Loja">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="ordemIndicadaAtual" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+		
+		<finder name="CG_ClassName" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="classNameId" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="CG_ClassNameNomeFantasia" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="classNameId" />
+			<finder-column name="nomeFantasia" comparator="LIKE" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<!-- References -->
+		<reference package-path="com.liferay.portlet.asset" entity="AssetEntry" />
+		<reference package-path="com.liferay.portlet.asset" entity="AssetLink" />
+		<reference package-path="com.liferay.portlet.social" entity="SocialActivity" />
+		<reference package-path="com.liferay.portlet.social" entity="SocialActivityCounter" />
+		<reference package-path="com.liferay.portlet.trash" entity="TrashEntry" />
+		<reference package-path="com.liferay.portal" entity="WorkflowInstanceLink" />		
+	</entity>
+	
+	<exceptions>
+		<exception>LojaRazaoSocialObrigatorio</exception>
+        <exception>LojaNomeFantasiaObrigatorio</exception>		
+		<exception>LojaCNPJInvalido</exception>
+		<exception>LojaCNPJDuplicado</exception>
+		<exception>LojaEmailInvalido</exception>
+		<exception>LojalteradaOutroUsuario</exception>
+	</exceptions>	
+</service-builder>

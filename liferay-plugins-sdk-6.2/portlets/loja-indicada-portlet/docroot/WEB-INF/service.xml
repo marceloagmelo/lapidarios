@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="br.com.prodevelopment.lapidarios.lojaindicada" auto-namespace-tables="false">
+	<author>Marcelo Melo</author>
+	<namespace>lojaindicada</namespace>
+
+	<entity name="LojaIndicada" table="loja_indicada" uuid="true" local-service="true"
+		remote-service="true" trash-enabled="true">
+
+		<!-- PK fields -->
+
+		<column name="lojaIndicadaId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="createUserId" type="long" />
+		<column name="modifiedUserId" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="idLoja" type="String" />
+		<column name="lojaIndicadaAtual" type="Boolean" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="lojaIndicadaId" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="Company" return-type="Collection">
+			<finder-column name="companyId" />
+		</finder>
+		<finder name="CG" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="CG_IdLoja" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="idLoja" comparator="LIKE" />
+		</finder>
+
+		<finder name="CG_lojaIndicadaAtual" return-type="LojaIndicada">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="lojaIndicadaAtual"/>
+		</finder>
+	</entity>
+	
+	<exceptions>
+		<exception>LojaIndicadaIdLojaObrigatorio</exception>
+	</exceptions>	
+</service-builder>

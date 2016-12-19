@@ -1,0 +1,44 @@
+/* line 1, ../sass/theme-downloads.scss */
+#lista-downloads {
+  padding: 0;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+/* line 6, ../sass/theme-downloads.scss */
+#lista-downloads .content-download {
+  padding: 20px 20px;
+  background: #d4d4d4;
+}
+/* line 11, ../sass/theme-downloads.scss */
+#lista-downloads h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #030000;
+  margin-top: 0;
+}
+/* line 18, ../sass/theme-downloads.scss */
+#lista-downloads .item-download {
+  float: left;
+  width: 100%;
+}
+/* line 23, ../sass/theme-downloads.scss */
+#lista-downloads .coluna {
+  margin-top: 20px;
+  width: 45%;
+}
+
+/* line 29, ../sass/theme-downloads.scss */
+.lista-materiais {
+  margin: 0;
+  padding: 0;
+}
+/* line 33, ../sass/theme-downloads.scss */
+.lista-materiais li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+/* line 37, ../sass/theme-downloads.scss */
+.lista-materiais li a {
+  font-size: 16px;
+  color: #000000;
+}

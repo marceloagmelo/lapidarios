@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.EventoLocalService" class="br.com.prodevelopment.lapidarios.evento.service.impl.EventoLocalServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.EventoService" class="br.com.prodevelopment.lapidarios.evento.service.impl.EventoServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.persistence.EventoPersistence" class="br.com.prodevelopment.lapidarios.evento.service.persistence.EventoPersistenceImpl" parent="basePersistence" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.EventoAgendaLocalService" class="br.com.prodevelopment.lapidarios.evento.service.impl.EventoAgendaLocalServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.EventoAgendaService" class="br.com.prodevelopment.lapidarios.evento.service.impl.EventoAgendaServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.persistence.EventoAgendaPersistence" class="br.com.prodevelopment.lapidarios.evento.service.persistence.EventoAgendaPersistenceImpl" parent="basePersistence" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.EventoInscricaoLocalService" class="br.com.prodevelopment.lapidarios.evento.service.impl.EventoInscricaoLocalServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.EventoInscricaoService" class="br.com.prodevelopment.lapidarios.evento.service.impl.EventoInscricaoServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.persistence.EventoInscricaoPersistence" class="br.com.prodevelopment.lapidarios.evento.service.persistence.EventoInscricaoPersistenceImpl" parent="basePersistence" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.EventoNaoInscritoLocalService" class="br.com.prodevelopment.lapidarios.evento.service.impl.EventoNaoInscritoLocalServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.EventoNaoInscritoService" class="br.com.prodevelopment.lapidarios.evento.service.impl.EventoNaoInscritoServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.persistence.EventoNaoInscritoPersistence" class="br.com.prodevelopment.lapidarios.evento.service.persistence.EventoNaoInscritoPersistenceImpl" parent="basePersistence" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.LocalLocalService" class="br.com.prodevelopment.lapidarios.evento.service.impl.LocalLocalServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.LocalService" class="br.com.prodevelopment.lapidarios.evento.service.impl.LocalServiceImpl" />
+	<bean id="br.com.prodevelopment.lapidarios.evento.service.persistence.LocalPersistence" class="br.com.prodevelopment.lapidarios.evento.service.persistence.LocalPersistenceImpl" parent="basePersistence" />
+</beans>

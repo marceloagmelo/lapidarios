@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="br.com.prodevelopment.lapidarios.evento.model.Evento">
+		<field name="uuid" type="String" />
+		<field name="eventoId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createUserId" type="long" />
+		<field name="modifiedUserId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="nome" type="String" localized="true" />
+		<field name="descricao" type="String" localized="true" />
+		<field name="userResponsavelId" type="long" />
+		<field name="userResponsavelNome" type="String" />
+		<field name="versao" type="double" />
+		<field name="imagemId" type="long" />
+		<field name="articleId" type="long" />
+	</model>
+	<model name="br.com.prodevelopment.lapidarios.evento.model.EventoAgenda">
+		<field name="uuid" type="String" />
+		<field name="eventoAgendaId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createUserId" type="long" />
+		<field name="modifiedUserId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="dataEvento" type="Date" />
+		<field name="horaEvento" type="String" />
+		<field name="qtdeVagas" type="int" />
+		<field name="qtdeVagasPreenchida" type="int" />
+		<field name="gratuito" type="boolean" />
+		<field name="valor" type="double" />
+		<field name="userResponsavelId" type="long" />
+		<field name="userResponsavelNome" type="String" />
+		<field name="eventoId" type="long" />
+		<field name="eventoNome" type="String" localized="true" />
+		<field name="localId" type="long" />
+		<field name="localNome" type="String" />
+		<field name="observacao" type="String" localized="true" />
+		<field name="versao" type="double" />
+		<field name="status" type="int" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusDate" type="Date" />
+		<field name="classNameId" type="long" />
+		<field name="classPK" type="long" />
+	</model>
+	<model name="br.com.prodevelopment.lapidarios.evento.model.EventoInscricao">
+		<field name="uuid" type="String" />
+		<field name="eventoInscricaoId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createUserId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="eventoAgendaId" type="long" />
+		<field name="eventoId" type="long" />
+		<field name="userNome" type="String" />
+	</model>
+	<model name="br.com.prodevelopment.lapidarios.evento.model.EventoNaoInscrito">
+		<field name="uuid" type="String" />
+		<field name="eventoNaoInscritoId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createUserId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="eventoAgendaId" type="long" />
+		<field name="eventoId" type="long" />
+		<field name="userNome" type="String" />
+	</model>
+	<model name="br.com.prodevelopment.lapidarios.evento.model.Local">
+		<field name="uuid" type="String" />
+		<field name="localId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createUserId" type="long" />
+		<field name="modifiedUserId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="nome" type="String" />
+		<field name="endLogradouro" type="String" />
+		<field name="endNumero" type="String" />
+		<field name="endComplemento" type="String" />
+		<field name="endCep" type="String" />
+		<field name="endBairro" type="String" />
+		<field name="endCidade" type="String" />
+		<field name="endUf" type="String" />
+		<field name="endPais" type="String" />
+		<field name="pontoReferencia" type="String" localized="true" />
+		<field name="versao" type="double" />
+	</model>
+</model-hints>

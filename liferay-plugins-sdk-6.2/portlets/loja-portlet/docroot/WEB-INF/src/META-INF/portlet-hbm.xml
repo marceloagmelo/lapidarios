@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="br.com.prodevelopment.lapidarios.loja.model.Loja" />
+	<class name="br.com.prodevelopment.lapidarios.loja.model.impl.LojaImpl" table="loja">
+		<cache usage="read-write" />
+		<id name="lojaId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="uuid" type="com.liferay.portal.dao.orm.hibernate.StringType" column="uuid_" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="modifiedUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="razaoSocial" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="nomeFantasia" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="observacao" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="cnpj" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endLogradouro" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endNumero" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endComplemento" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endCep" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endBairro" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endCidade" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endUf" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="endPais" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="versao" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="ordemIndicada" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="ordemIndicadaAtual" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="statusByUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="statusByUserName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="statusDate" type="org.hibernate.type.TimestampType" />
+		<property name="classNameId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="classPK" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+	</class>
+</hibernate-mapping>

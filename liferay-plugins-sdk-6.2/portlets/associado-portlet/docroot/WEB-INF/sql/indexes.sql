@@ -1,0 +1,12 @@
+create index IX_5D01366A on associado (companyId);
+create index IX_FAE9D580 on associado (companyId, groupId);
+create index IX_CFF34E4D on associado (companyId, groupId, nome);
+create index IX_B574D7B7 on associado (companyId, nome);
+create index IX_B90F7750 on associado (cpfCnpj);
+create index IX_37135387 on associado (dataNascimento);
+create index IX_30911C1F on associado (idPolishop);
+create index IX_C58DEA28 on associado (rgInscricaoMun);
+create index IX_3DA31D38 on associado (userId);
+create index IX_ECD2CCF6 on associado (uuid_);
+create index IX_DE4A172 on associado (uuid_, companyId);
+create unique index IX_46AADC74 on associado (uuid_, groupId);

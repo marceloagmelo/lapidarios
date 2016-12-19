@@ -1,0 +1,147 @@
+/* line 1, ../sass/theme-share.scss */
+.page-share {
+  padding: 50px 0;
+}
+/* line 3, ../sass/theme-share.scss */
+.page-share h2 {
+  color: #646465;
+  font-size: 28px;
+  font-weight: 400;
+}
+/* line 9, ../sass/theme-share.scss */
+.page-share hr {
+  border-top: 1px solid #ccc;
+}
+
+/* line 14, ../sass/theme-share.scss */
+.endereco-user {
+  background: #e8e8e8;
+  font-size: 18px;
+  color: #646464;
+  padding: 7px 10px;
+  border: #ccc solid 1px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  display: inline-block;
+  min-width: 50%;
+}
+
+/* line 27, ../sass/theme-share.scss */
+.caixa-end-user {
+  padding: 20px 0;
+}
+/* line 29, ../sass/theme-share.scss */
+.caixa-end-user a {
+  font-size: 16px;
+  -webkit-border-radius: 6px !important;
+  -moz-border-radius: 6px !important;
+  border-radius: 6px !important;
+  padding: 8px 23px !important;
+}
+
+/* line 38, ../sass/theme-share.scss */
+.carousel-imagens {
+  position: relative;
+  margin: 30px 0;
+}
+/* line 42, ../sass/theme-share.scss */
+.carousel-imagens .bt-owl {
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  margin: -22px 0;
+  color: #cb0032;
+}
+/* line 49, ../sass/theme-share.scss */
+.carousel-imagens .bt-owl i {
+  width: auto;
+  height: auto;
+}
+/* line 55, ../sass/theme-share.scss */
+.carousel-imagens .bt-next {
+  right: 0;
+}
+/* line 59, ../sass/theme-share.scss */
+.carousel-imagens .bt-left {
+  left: 0;
+}
+/* line 63, ../sass/theme-share.scss */
+.carousel-imagens .inner-carousel-imagens {
+  padding: 0 50px;
+}
+
+/* line 69, ../sass/theme-share.scss */
+.caixa-imagens .radio {
+  margin: 0;
+  padding: 0;
+}
+/* line 73, ../sass/theme-share.scss */
+.caixa-imagens input[type="radio"] {
+  margin: 10px auto;
+  width: 20px;
+  float: none;
+  display: block;
+}
+
+/* line 82, ../sass/theme-share.scss */
+.caixa-texto h2 {
+  margin-bottom: 20px;
+}
+/* line 85, ../sass/theme-share.scss */
+.caixa-texto label {
+  color: #646465;
+  font-size: 17px;
+  line-height: 23px;
+  margin-bottom: 24px;
+}
+/* line 91, ../sass/theme-share.scss */
+.caixa-texto input[type="radio"] {
+  margin-top: 5px;
+}
+
+/* line 98, ../sass/theme-share.scss */
+.caixa-compartilhe .btn-facebook {
+  background: #3b5998;
+}
+/* line 102, ../sass/theme-share.scss */
+.caixa-compartilhe .btn-linkedin {
+  background: #0077b5;
+}
+/* line 104, ../sass/theme-share.scss */
+.caixa-compartilhe .btn-linkedin .icon {
+  margin: 0 5px;
+}
+/* line 109, ../sass/theme-share.scss */
+.caixa-compartilhe .btn-twitter {
+  background: #55acee;
+}
+/* line 111, ../sass/theme-share.scss */
+.caixa-compartilhe .btn-twitter .icon {
+  margin: 0 5px;
+}
+/* line 116, ../sass/theme-share.scss */
+.caixa-compartilhe .bt-compartilhe {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+}
+/* line 124, ../sass/theme-share.scss */
+.caixa-compartilhe .bt-compartilhe i {
+  color: #fff;
+  line-height: 33px;
+  display: inline-block;
+}
+
+/* line 132, ../sass/theme-share.scss */
+#redes {
+  margin: 30px 0;
+}
+/* line 134, ../sass/theme-share.scss */
+#redes li {
+  display: inline-block;
+  margin-right: 8px;
+}

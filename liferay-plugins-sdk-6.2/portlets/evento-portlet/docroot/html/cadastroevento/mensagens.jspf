@@ -1,0 +1,5 @@
+<liferay-ui:success key="mensagem.evento.adicionado.sucesso"
+	message="mensagem.evento.adicionado.sucesso" />
+<liferay-ui:success key="mensagem.evento.alterado.sucesso"
+	message="mensagem.evento.alterado.sucesso" />
+	

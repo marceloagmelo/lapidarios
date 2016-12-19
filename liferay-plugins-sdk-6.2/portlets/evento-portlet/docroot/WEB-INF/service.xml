@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="br.com.prodevelopment.lapidarios.evento"
+	auto-namespace-tables="false">
+	<author>Marcelo Melo</author>
+	<namespace>evento</namespace>
+
+	<entity name="Evento" table="evento" uuid="true" local-service="true"
+		remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="eventoId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="createUserId" type="long" />
+		<column name="modifiedUserId" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="nome" type="String" localized="true" />
+		<column name="descricao" type="String" localized="true" />
+		<column name="userResponsavelId" type="long" />
+		<column name="userResponsavelNome" type="String" />
+		<column name="versao" type="double" />
+		<column name="imagemId" type="long" />
+		<column name="articleId" type="long" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="nome" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="CG" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="CG_Nome" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="nome" comparator="LIKE" />
+		</finder>
+
+		<finder name="CG_ResponsavelId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="userResponsavelId" />
+		</finder>
+
+		<finder name="CG_ResponsavelNome" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="userResponsavelNome" comparator="LIKE" />
+		</finder>
+	</entity>
+
+	<entity name="Local" table="local" uuid="true" local-service="true"
+		remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="localId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="createUserId" type="long" />
+		<column name="modifiedUserId" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="nome" type="String" />
+		<column name="endLogradouro" type="String" />
+		<column name="endNumero" type="String" />
+		<column name="endComplemento" type="String" />
+		<column name="endCep" type="String" />
+		<column name="endBairro" type="String" />
+		<column name="endCidade" type="String" />
+		<column name="endUf" type="String" />
+		<column name="endPais" type="String" />
+		<column name="pontoReferencia" type="String" localized="true" />
+		<column name="versao" type="double" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="nome" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="CG" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="CG_Nome" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="nome" comparator="LIKE" />
+		</finder>
+	</entity>
+
+	<entity name="EventoAgenda" table="evento_agenda" uuid="true"
+		local-service="true" remote-service="true" trash-enabled="true">
+
+		<!-- PK fields -->
+
+		<column name="eventoAgendaId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="createUserId" type="long" />
+		<column name="modifiedUserId" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="dataEvento" type="Date" />
+		<column name="horaEvento" type="String" />
+		<column name="qtdeVagas" type="int" />
+		<column name="qtdeVagasPreenchida" type="int" />
+		<column name="gratuito" type="boolean" />
+		<column name="valor" type="double" />
+		<column name="userResponsavelId" type="long" />
+		<column name="userResponsavelNome" type="String" />
+		<column name="eventoId" type="long" />
+		<column name="eventoNome" type="String" localized="true" />
+		<column name="localId" type="long" />
+		<column name="localNome" type="String" />
+		<column name="observacao" type="String" localized="true" />
+		<column name="versao" type="double" />
+		<column name="status" type="int" />
+		<column name="statusByUserId" type="long" />
+		<column name="statusByUserName" type="String" />
+		<column name="statusDate" type="Date" />
+		<column name="classNameId" type="long" />
+		<column name="classPK" type="long" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="eventoNome" />
+			<order-column name="dataEvento" />
+			<order-column name="horaEvento" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="CG" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="CG_Data" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="dataEvento" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="CG_Evento_Data" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="eventoId" />
+			<finder-column name="dataEvento" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="CG_EventoNome" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="eventoNome" comparator="LIKE" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="CG_EventoID" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="eventoId" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="CG_LocalNome" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="localNome" comparator="LIKE" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+		
+		<finder name="CG_LocalID" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="localId" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<finder name="CG_ResponsavelNome" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="userResponsavelNome" comparator="LIKE" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+		
+		<finder name="CG_ResponsavelId" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="userResponsavelId" />
+			<finder-column name="status" arrayable-operator="OR" />
+		</finder>
+
+		<!-- References -->
+		<reference package-path="com.liferay.portlet.trash" entity="TrashEntry" />
+		<reference package-path="com.liferay.portal" entity="WorkflowInstanceLink" />
+	</entity>
+
+	<entity name="EventoInscricao" table="evento_inscricao" uuid="true" local-service="true"
+		remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="eventoInscricaoId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="createUserId" type="long" />
+		<column name="createDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="eventoAgendaId" type="long" />
+		<column name="eventoId" type="long" />
+		<column name="userNome" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="eventoInscricaoId" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="CG" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="CG_EventoAgenda" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="eventoAgendaId" />
+		</finder>
+
+		<finder name="CG_Evento" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="eventoId" />
+		</finder>
+
+		<finder name="CG_Usuario" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="userNome" comparator="LIKE" />
+		</finder>
+
+		<finder name="EventoAgendaUsuario" return-type="EventoInscricao">
+			<finder-column name="eventoAgendaId" />
+			<finder-column name="createUserId" />
+		</finder>
+	</entity>
+
+	<entity name="EventoNaoInscrito" table="evento_nao_inscrito" uuid="true" local-service="true"
+		remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="eventoNaoInscritoId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="createUserId" type="long" />
+		<column name="createDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="eventoAgendaId" type="long" />
+		<column name="eventoId" type="long" />
+		<column name="userNome" type="String" />
+
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="eventoNaoInscritoId" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="CG" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="CG_EventoAgenda" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="eventoAgendaId" />
+		</finder>
+
+		<finder name="CG_Evento" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="eventoId" />
+		</finder>
+
+		<finder name="CG_Usuario" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="userNome" comparator="LIKE" />
+		</finder>
+		
+		<finder name="EventoAgendaUsuario" return-type="EventoNaoInscrito">
+			<finder-column name="eventoAgendaId" />
+			<finder-column name="createUserId" />
+		</finder>
+		
+	</entity>
+
+	<exceptions>
+		<exception>EventoNomeObrigatorio</exception>
+		<exception>EventoAlteradoOutroUsuario</exception>
+		<exception>LocalAlteradoOutroUsuario</exception>
+		<exception>EventoAgendaAlteradoOutroUsuario</exception>
+		<exception>LocalNomeObrigatorio</exception>
+		<exception>EventoNaoEncontrado</exception>
+		<exception>EventoObrigatorio</exception>
+		<exception>EventoLocalObrigatorio</exception>
+		<exception>EventoDataObrigatoria</exception>
+		<exception>EventoDataInvalida</exception>
+		<exception>EventoDataMenorHoje</exception>
+		<exception>EventoQtdeVagasObrigatoria</exception>
+		<exception>EventoQtdeVagasPreenchida</exception>
+		<exception>EventoResponsavelObrigatorio</exception>
+		<exception>EventoAgendaObrigatorio</exception>
+		<exception>EventoAgendaResponsavelObrigatorio</exception>
+	</exceptions>
+</service-builder>

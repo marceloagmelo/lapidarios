@@ -1,0 +1,10 @@
+create index IX_60E08778 on loja_indicada (companyId);
+create index IX_7AB9D432 on loja_indicada (companyId, groupId);
+create index IX_59F0CE1B on loja_indicada (companyId, groupId, idLoja);
+create index IX_D02C6BC5 on loja_indicada (companyId, groupId, lojaIndicada);
+create index IX_AF81616C on loja_indicada (companyId, groupId, lojaIndicadaAtual);
+create index IX_D5360A99 on loja_indicada (idLoja);
+create index IX_851B4199 on loja_indicada (lojaId);
+create index IX_5E30D504 on loja_indicada (uuid_);
+create index IX_AEA8A4A4 on loja_indicada (uuid_, companyId);
+create unique index IX_269A0426 on loja_indicada (uuid_, groupId);

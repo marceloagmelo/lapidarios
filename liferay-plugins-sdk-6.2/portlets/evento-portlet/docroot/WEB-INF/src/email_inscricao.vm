@@ -1,0 +1,16 @@
+<b>$user.getFullName(),
+</br></br>
+<p>Parabéns. Você tomou uma decisão que seguramente vai abrir seus horizontes profissionais e pode ser o início de uma nova fase financeira na vida de sua família.</p>
+</br></br>
+<p>Estaremos aguardando sua presença em $dataEvento as $horaEvento horas</p>
+</br></br>
+<p><b>Local:</b> $localEvento</p>
+<p><b>End.:</b> $endEvento</p>
+</br></br>
+<p>Será um prazer recebê-lo.</p>
+</br></br>
+<p>Forte abraço.</p>
+</br></br>
+<b><p>Equipe Lapidários</p> 
+<p>lapidarios.com.vc</p></b>
+

@@ -1,0 +1,154 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+	
+	<portlet>
+		<portlet-name>cadastro-evento</portlet-name>
+		<display-name>Cadastro Evento</display-name>
+		<portlet-class>
+			br.com.prodevelopment.lapidarios.portlet.cadastroevento.action.CadastroEventoPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/cadastroevento/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>
+			content.cadastroevento.Language
+		</resource-bundle>
+		<portlet-info>
+			<title>Cadastro Evento</title>
+			<short-title>Cadastro Evento</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>agenda-evento</portlet-name>
+		<display-name>Agenda Evento</display-name>
+		<portlet-class>
+			br.com.prodevelopment.lapidarios.portlet.agendaevento.action.AgendaEventoPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/agendaevento/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.agendaevento.Language</resource-bundle>
+		<portlet-info>
+			<title>Agenda Evento</title>
+			<short-title>Agenda Evento</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>lista-evento</portlet-name>
+		<display-name>Lista Evento</display-name>
+		<portlet-class>
+			br.com.prodevelopment.lapidarios.portlet.listaevento.action.ListaEventoPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/listaevento/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>detalhe-evento</name>
+			<value>/html/listaevento/detalheEvento.jsp</value>
+		</init-param>
+		<init-param>
+			<name>confirma-troca-evento</name>
+			<value>/html/listaevento/confirmaTrocaEvento.jsp</value>
+		</init-param>
+		
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>content.listaevento.Language</resource-bundle>
+		<portlet-info>
+			<title>Lista Evento</title>
+			<short-title>Lista Evento</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+	<portlet>
+		<portlet-name>lista-inscrito-evento</portlet-name>
+		<display-name>Lista Inscrito Evento</display-name>
+		<portlet-class>
+			br.com.prodevelopment.lapidarios.portlet.listainscritoevento.action.ListaInscritoEventoPortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/listainscritoevento/view.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>
+			content.listainscritoevento.Language
+		</resource-bundle>
+		<portlet-info>
+			<title>Lista Inscrito Evento</title>
+			<short-title>Lista Inscrito Evento</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+	</portlet>
+</portlet-app>

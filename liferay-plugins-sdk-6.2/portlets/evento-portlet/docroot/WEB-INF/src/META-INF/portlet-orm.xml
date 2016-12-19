@@ -1,0 +1,195 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="br.com.prodevelopment.lapidarios.evento.model.impl.EventoModelImpl">
+		<attributes>
+			<id name="eventoId" />
+			<basic name="uuid">
+				<column name="UUID_" />
+			</basic>
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="createUserId" />
+			<basic name="modifiedUserId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nome" />
+			<basic name="descricao" />
+			<basic name="userResponsavelId" />
+			<basic name="userResponsavelNome" />
+			<basic name="versao" />
+			<basic name="imagemId" />
+			<basic name="articleId" />
+			<transient name="createUserUuid" />
+			<transient name="descricaoCurrentLanguageId" />
+			<transient name="descricaoMap" />
+			<transient name="modelAttributes" />
+			<transient name="modifiedUserUuid" />
+			<transient name="nomeCurrentLanguageId" />
+			<transient name="nomeMap" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="br.com.prodevelopment.lapidarios.evento.model.impl.EventoAgendaModelImpl">
+		<attributes>
+			<id name="eventoAgendaId" />
+			<basic name="uuid">
+				<column name="UUID_" />
+			</basic>
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="createUserId" />
+			<basic name="modifiedUserId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="dataEvento">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="horaEvento" />
+			<basic name="qtdeVagas" />
+			<basic name="qtdeVagasPreenchida" />
+			<basic name="gratuito" />
+			<basic name="valor" />
+			<basic name="userResponsavelId" />
+			<basic name="userResponsavelNome" />
+			<basic name="eventoId" />
+			<basic name="eventoNome" />
+			<basic name="localId" />
+			<basic name="localNome" />
+			<basic name="observacao" />
+			<basic name="versao" />
+			<basic name="status" />
+			<basic name="statusByUserId" />
+			<basic name="statusByUserName" />
+			<basic name="statusDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="classNameId" />
+			<basic name="classPK" />
+			<transient name="className" />
+			<transient name="createUserUuid" />
+			<transient name="eventoNomeCurrentLanguageId" />
+			<transient name="eventoNomeMap" />
+			<transient name="modelAttributes" />
+			<transient name="modifiedUserUuid" />
+			<transient name="observacaoCurrentLanguageId" />
+			<transient name="observacaoMap" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+			<transient name="statusByUserUuid" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="br.com.prodevelopment.lapidarios.evento.model.impl.EventoInscricaoModelImpl">
+		<attributes>
+			<id name="eventoInscricaoId" />
+			<basic name="uuid">
+				<column name="UUID_" />
+			</basic>
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="createUserId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="eventoAgendaId" />
+			<basic name="eventoId" />
+			<basic name="userNome" />
+			<transient name="createUserUuid" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="br.com.prodevelopment.lapidarios.evento.model.impl.EventoNaoInscritoModelImpl">
+		<attributes>
+			<id name="eventoNaoInscritoId" />
+			<basic name="uuid">
+				<column name="UUID_" />
+			</basic>
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="createUserId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="eventoAgendaId" />
+			<basic name="eventoId" />
+			<basic name="userNome" />
+			<transient name="createUserUuid" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<mapped-superclass class="br.com.prodevelopment.lapidarios.evento.model.impl.LocalModelImpl">
+		<attributes>
+			<id name="localId" />
+			<basic name="uuid">
+				<column name="UUID_" />
+			</basic>
+			<basic name="companyId" />
+			<basic name="groupId" />
+			<basic name="createUserId" />
+			<basic name="modifiedUserId" />
+			<basic name="createDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="modifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="nome" />
+			<basic name="endLogradouro" />
+			<basic name="endNumero" />
+			<basic name="endComplemento" />
+			<basic name="endCep" />
+			<basic name="endBairro" />
+			<basic name="endCidade" />
+			<basic name="endUf" />
+			<basic name="endPais" />
+			<basic name="pontoReferencia" />
+			<basic name="versao" />
+			<transient name="createUserUuid" />
+			<transient name="modelAttributes" />
+			<transient name="modifiedUserUuid" />
+			<transient name="pontoReferenciaCurrentLanguageId" />
+			<transient name="pontoReferenciaMap" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="br.com.prodevelopment.lapidarios.evento.model.impl.EventoImpl" name="Evento">
+		<table name="evento" />
+		<attributes />
+	</entity>
+	<entity class="br.com.prodevelopment.lapidarios.evento.model.impl.EventoAgendaImpl" name="EventoAgenda">
+		<table name="evento_agenda" />
+		<attributes />
+	</entity>
+	<entity class="br.com.prodevelopment.lapidarios.evento.model.impl.EventoInscricaoImpl" name="EventoInscricao">
+		<table name="evento_inscricao" />
+		<attributes />
+	</entity>
+	<entity class="br.com.prodevelopment.lapidarios.evento.model.impl.EventoNaoInscritoImpl" name="EventoNaoInscrito">
+		<table name="evento_nao_inscrito" />
+		<attributes />
+	</entity>
+	<entity class="br.com.prodevelopment.lapidarios.evento.model.impl.LocalImpl" name="Local">
+		<table name="local" />
+		<attributes />
+	</entity>
+</entity-mappings>

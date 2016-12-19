@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+
+<portlet-app xmlns="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd http://java.sun.com/xml/ns/portlet/portlet-app_2_0.xsd" version="2.0">
+	
+	<portlet>
+		<portlet-name>cadastro-clube</portlet-name>
+		<display-name>Cadastro Clube</display-name>
+		<portlet-class>
+			br.com.prodevelopment.lapidarios.portlet.cadastroclube.action.CadastroClubePortlet
+		</portlet-class>
+		<init-param>
+			<name>view-template</name>
+			<value>/html/cadastroclube/view.jsp</value>
+		</init-param>
+		<init-param>
+			<name>cadastro-jsp</name>
+			<value>/html/cadastroclube/cadastro.jsp</value>
+		</init-param>
+		<expiration-cache>0</expiration-cache>
+		<supports>
+			<mime-type>text/html</mime-type>
+			<portlet-mode>view</portlet-mode>
+		</supports>
+		<resource-bundle>
+			content.cadastroclube.Language
+		</resource-bundle>
+		<portlet-info>
+			<title>Cadastro Clube</title>
+			<short-title>Cadastro Clube</short-title>
+			<keywords></keywords>
+		</portlet-info>
+		<security-role-ref>
+			<role-name>administrator</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>guest</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>power-user</role-name>
+		</security-role-ref>
+		<security-role-ref>
+			<role-name>user</role-name>
+		</security-role-ref>
+		<supported-public-render-parameter>lojaIndicadaId</supported-public-render-parameter>
+		<supported-public-render-parameter>jaSouLapidarios</supported-public-render-parameter>
+	</portlet>
+	<public-render-parameter>
+		<identifier>lojaIndicadaId</identifier>
+		<qname xmlns:x="http://www.liferay.com/public-render-parameters">x:lojaIndicadaId</qname>
+	</public-render-parameter>
+	<public-render-parameter>
+		<identifier>jaSouLapidarios</identifier>
+		<qname xmlns:x="http://www.liferay.com/public-render-parameters">x:jaSouLapidarios</qname>
+	</public-render-parameter>
+</portlet-app>

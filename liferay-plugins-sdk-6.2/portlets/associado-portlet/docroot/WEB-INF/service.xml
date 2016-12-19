@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="br.com.prodevelopment.associado" auto-namespace-tables="false">
+	<author>Marcelo Melo</author>
+	<namespace>associado</namespace>
+
+	<entity name="Associado" table="associado" uuid="true" local-service="true" remote-service="true">
+
+		<!-- PK fields -->
+
+		<column name="associadoId" type="long" primary="true" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" type="long" />
+		<column name="groupId" type="long" />
+		<column name="createUserId" type="long" />
+		<column name="modifiedUserId" type="long" />
+		<column name="createDate" type="Date" />
+		<column name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="nome" type="String" />
+		<column name="rgInscricaoMun" type="String" />
+		<column name="rgOrgaoEmissor" type="String" />
+		<column name="rgDataEmissao" type="Date" />
+		<column name="tipoPessoa" type="String" />
+		<column name="cpfCnpj" type="String" />
+		<column name="sexo" type="String" />
+		<column name="estadoCivil" type="String" />
+		<column name="dataNascimento" type="Date" />
+		<column name="endComLogradouro" type="String" />
+		<column name="endComNumero" type="String" />
+		<column name="endComComplemento" type="String" />
+		<column name="endComCep" type="String" />
+		<column name="endComBairro" type="String" />
+		<column name="endComCidade" type="String" />
+		<column name="endComUf" type="String" />
+		<column name="endComPais" type="String" />
+		<column name="endResLogradouro" type="String" />
+		<column name="endResNumero" type="String" />
+		<column name="endResComplemento" type="String" />
+		<column name="endResCep" type="String" />
+		<column name="endResBairro" type="String" />
+		<column name="endResCidade" type="String" />
+		<column name="endResUf" type="String" />
+		<column name="endResPais" type="String" />
+		<column name="telComDdd" type="String" />
+		<column name="versao" type="double" />
+		<column name="userId" type="long" />
+		<column name="observacao" type="String" />
+		<column name="idPolishop" type="String" />
+		<column name="idLojaIndicada" type="String" />
+		<column name="idPatrocinador" type="String" />
+		
+		<!-- Order -->
+
+		<order by="asc">
+			<order-column name="nome" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="Company" return-type="Collection">
+			<finder-column name="companyId" />
+		</finder>
+		<finder name="C_G" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+		</finder>
+
+		<finder name="C_NOME" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="nome" comparator="LIKE" />
+		</finder>
+
+		<finder name="C_G_NOME" return-type="Collection">
+			<finder-column name="companyId" />
+			<finder-column name="groupId" />
+			<finder-column name="nome" comparator="LIKE" />
+		</finder>
+
+		<finder name="CPF_CNPJ" return-type="Associado">
+			<finder-column name="cpfCnpj" />
+		</finder>
+
+		<finder name="RG_INSCRICAO" return-type="Associado">
+			<finder-column name="rgInscricaoMun" />
+		</finder>
+
+		<finder name="DT_NASCIMENTO" return-type="Collection">
+			<finder-column name="dataNascimento" />
+		</finder>
+		
+		<finder name="USUARIO" return-type="Associado">
+			<finder-column name="userId" />
+		</finder>
+		<finder name="ID_POLISHOP" return-type="Associado">
+			<finder-column name="idPolishop" />
+		</finder>
+		
+
+		<!-- References -->
+		<reference package-path="com.liferay.portlet.social" entity="SocialActivity" />
+		<reference package-path="com.liferay.portlet.asset" entity="AssetEntry" />
+		<reference package-path="com.liferay.portlet.asset" entity="AssetLink" />
+		
+	</entity>
+
+	<exceptions>
+		<exception>AssociadoNomeObrigatorio</exception>
+		<exception>AssociadoCPFInvalido</exception>
+		<exception>AssociadoCPFDuplicado</exception>
+		<exception>AssociadoCNPJInvalido</exception>
+		<exception>AssociadoCNPJDuplicado</exception>
+		<exception>AssociadoDataNascimentoInvalida</exception>
+		<exception>AssociadoRGDataEmissaoInvalida</exception>
+		<exception>AssociadoRGInscricaoMunDuplicado</exception>
+		<exception>AssociadoPaisResTemQueSerNumerico</exception>
+		<exception>AssociadoCidadeResTemQueSerNumerica</exception>
+		<exception>AssociadoPaisComTemQueSerNumerico</exception>
+		<exception>AssociadoCidadeComTemQueSerNumerica</exception>
+		<exception>AssociadoEmailInvalido</exception>
+		<exception>AssociadoUsuarioDuplicado</exception>
+		<exception>AssociadoAlteradoOutroUsuario</exception>
+		<exception>AssociadoIDPolishopDuplicado</exception>
+	</exceptions>
+</service-builder>

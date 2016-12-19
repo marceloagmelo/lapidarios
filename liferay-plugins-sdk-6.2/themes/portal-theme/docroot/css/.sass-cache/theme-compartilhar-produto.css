@@ -1,0 +1,197 @@
+/* line 1, ../sass/theme-compartilhar-produto.scss */
+.page-comaprtilha-produto {
+  padding: 20px 0; }
+
+/* line 3, ../sass/theme-compartilhar-produto.scss */
+.page-comaprtilha-produto h2 {
+  color: #646465;
+  font-size: 28px;
+  font-weight: 400; }
+
+/* line 9, ../sass/theme-compartilhar-produto.scss */
+.page-comaprtilha-produto hr {
+  border-top: 1px solid #ccc; }
+
+/* line 13, ../sass/theme-compartilhar-produto.scss */
+.page-comaprtilha-produto .inner-carousel-imagens h2 {
+  font-size: 17px;
+  color: #cb0032;
+  text-align: center;
+  line-height: 21px;
+  font-weight: 700; }
+
+/* line 21, ../sass/theme-compartilhar-produto.scss */
+.page-comaprtilha-produto .inner-carousel-imagens .desc_produto {
+  font-size: 14px;
+  line-height: 16px;
+  color: #3a3a3a;
+  text-align: center; }
+
+/* line 28, ../sass/theme-compartilhar-produto.scss */
+.page-comaprtilha-produto .inner-carousel-imagens .preco {
+  font-size: 17px;
+  font-weight: 700;
+  color: #3a3a3a;
+  text-align: center;
+  margin-bottom: 0; }
+
+/* line 36, ../sass/theme-compartilhar-produto.scss */
+.page-comaprtilha-produto .inner-carousel-imagens .condicoes {
+  text-align: center;
+  font-weight: 700;
+  color: #3a3a3a;
+  font-size: 14px; }
+
+/* line 43, ../sass/theme-compartilhar-produto.scss */
+.page-comaprtilha-produto .inner-carousel-imagens .img-preoduto {
+  width: auto;
+  display: block;
+  margin: 0 auto; }
+
+/* line 51, ../sass/theme-compartilhar-produto.scss */
+.group-text {
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-left: 2px; }
+
+/* line 59, ../sass/theme-compartilhar-produto.scss */
+.carousel-imagens {
+  position: relative;
+  margin: 30px 0; }
+
+/* line 63, ../sass/theme-compartilhar-produto.scss */
+.carousel-imagens .bt-owl {
+  position: absolute;
+  top: 50%;
+  font-size: 20px;
+  margin: -22px 0;
+  color: #cb0032; }
+
+/* line 70, ../sass/theme-compartilhar-produto.scss */
+.carousel-imagens .bt-owl i {
+  width: auto;
+  height: auto; }
+
+/* line 76, ../sass/theme-compartilhar-produto.scss */
+.carousel-imagens .bt-next {
+  right: 0; }
+
+/* line 80, ../sass/theme-compartilhar-produto.scss */
+.carousel-imagens .bt-left {
+  left: 0; }
+
+/* line 84, ../sass/theme-compartilhar-produto.scss */
+.carousel-imagens .inner-carousel-imagens {
+  padding: 0 50px; }
+
+/* line 90, ../sass/theme-compartilhar-produto.scss */
+.caixa-imagens .radio {
+  margin: 0;
+  padding: 0; }
+
+/* line 94, ../sass/theme-compartilhar-produto.scss */
+.caixa-imagens input[type="radio"] {
+  margin: 10px auto;
+  width: 20px;
+  float: none;
+  display: block; }
+
+/* line 103, ../sass/theme-compartilhar-produto.scss */
+.caixa-texto h2 {
+  margin-bottom: 20px; }
+
+/* line 106, ../sass/theme-compartilhar-produto.scss */
+.caixa-texto label {
+  color: #646465;
+  font-size: 17px;
+  line-height: 23px;
+  margin-bottom: 24px; }
+
+/* line 112, ../sass/theme-compartilhar-produto.scss */
+.caixa-texto input[type="radio"] {
+  margin-top: 5px; }
+
+/* line 119, ../sass/theme-compartilhar-produto.scss */
+.caixa-compartilhe .btn-facebook {
+  background: #3b5998; }
+
+/* line 123, ../sass/theme-compartilhar-produto.scss */
+.caixa-compartilhe .btn-linkedin {
+  background: #0077b5; }
+
+/* line 125, ../sass/theme-compartilhar-produto.scss */
+.caixa-compartilhe .btn-linkedin .icon {
+  margin: 0 5px; }
+
+/* line 130, ../sass/theme-compartilhar-produto.scss */
+.caixa-compartilhe .btn-twitter {
+  background: #55acee; }
+
+/* line 132, ../sass/theme-compartilhar-produto.scss */
+.caixa-compartilhe .btn-twitter .icon {
+  margin: 0 5px; }
+
+/* line 137, ../sass/theme-compartilhar-produto.scss */
+.caixa-compartilhe .btn-email {
+  background: #afafaf; }
+
+/* line 139, ../sass/theme-compartilhar-produto.scss */
+.caixa-compartilhe .btn-email .icon {
+  margin: 0 5px; }
+
+/* line 144, ../sass/theme-compartilhar-produto.scss */
+.caixa-compartilhe .bt-compartilhe {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none; }
+
+/* line 152, ../sass/theme-compartilhar-produto.scss */
+.caixa-compartilhe .bt-compartilhe i {
+  color: #fff;
+  line-height: 33px;
+  display: inline-block; }
+
+/* line 160, ../sass/theme-compartilhar-produto.scss */
+#redes {
+  margin: 30px 0 0 0; }
+
+/* line 162, ../sass/theme-compartilhar-produto.scss */
+#redes li {
+  display: inline-block;
+  margin-right: 8px; }
+
+/* line 168, ../sass/theme-compartilhar-produto.scss */
+#redes .checkbox input {
+  clear: both;
+  width: 30px;
+  margin: 10px auto;
+  float: none;
+  text-align: center;
+  display: block; }
+
+/* line 178, ../sass/theme-compartilhar-produto.scss */
+#redes .radio, #redes .checkbox {
+  min-height: auto;
+  padding-left: 0; }
+
+/* line 183, ../sass/theme-compartilhar-produto.scss */
+#redes label {
+  font-size: 26px; }
+
+/* line 189, ../sass/theme-compartilhar-produto.scss */
+.caixa-emails textarea {
+  clear: both;
+  float: left;
+  width: 100%;
+  max-width: 400px;
+  height: 150px;
+  margin-bottom: 40px; }
+
+/* line 199, ../sass/theme-compartilhar-produto.scss */
+.bloco-link {
+  padding: 20px 300px 5px 0; }
+

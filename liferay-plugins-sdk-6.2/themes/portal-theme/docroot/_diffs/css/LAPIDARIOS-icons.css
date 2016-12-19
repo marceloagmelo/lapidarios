@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "LAPIDARIOS-icons";
+  src: url("../fonts/LAPIDARIOS-icons.eot");
+  src: url("../fonts/LAPIDARIOS-icons.eot?#iefix") format("eot"), url("../fonts/LAPIDARIOS-icons.woff") format("woff"), url("../fonts/LAPIDARIOS-icons.ttf") format("truetype"), url("../fonts/LAPIDARIOS-icons.svg#LAPIDARIOS-icons") format("svg");
+}
+/* line 22, ../sass/LAPIDARIOS-icons.scss */
+.icon-alert:before, .icon-arrow-left-share:before, .icon-arrow-left:before, .icon-arrow-right-share:before, .icon-arrow-right:before, .icon-contato-comigo:before, .icon-contato:before, .icon-downloads:before, .icon-ead:before, .icon-email:before, .icon-evento:before, .icon-facebook:before, .icon-fullscreen:before, .icon-link:before, .icon-linkedin:before, .icon-menu:before, .icon-minus:before, .icon-more:before, .icon-question-form:before, .icon-question:before, .icon-share:before, .icon-slide:before, .icon-transmissao:before, .icon-twitter:before, .icon-video:before, .icon-wiki:before {
+  font-family: "LAPIDARIOS-icons";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-alert:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-arrow-left-share:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-arrow-left:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-arrow-right-share:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-arrow-right:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-contato-comigo:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-contato:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-downloads:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-ead:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-email:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-evento:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-facebook:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-fullscreen:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-link:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-linkedin:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-menu:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-minus:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-more:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-question-form:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-question:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-share:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-slide:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-transmissao:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-twitter:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-video:before {
+  content: "";
+}
+
+/* line 112, ../sass/LAPIDARIOS-icons.scss */
+.icon-wiki:before {
+  content: "";
+}

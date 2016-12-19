@@ -1,0 +1,66 @@
+/* line 1, ../sass/theme-slideshare.scss */
+#top-slideshare {
+  background: #454545;
+  padding: 60px 0; }
+
+/* line 6, ../sass/theme-slideshare.scss */
+.inner-apresentacao {
+  position: relative; }
+
+/* line 11, ../sass/theme-slideshare.scss */
+.bts-navigate a {
+  position: absolute;
+  top: 50%;
+  font-size: 80px;
+  color: #fff;
+  margin: -50px 0; }
+
+/* line 18, ../sass/theme-slideshare.scss */
+.bts-navigate a.btn-left {
+  left: 0; }
+
+/* line 21, ../sass/theme-slideshare.scss */
+.bts-navigate a.btn-right {
+  right: 0; }
+
+/* line 24, ../sass/theme-slideshare.scss */
+.bts-navigate a:hover, .bts-navigate a:focus {
+  text-decoration: none; }
+
+/* line 29, ../sass/theme-slideshare.scss */
+.center-item {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto; }
+
+/* line 33, ../sass/theme-slideshare.scss */
+.center-item img {
+  display: block;
+  margin: 0 auto; }
+
+/* line 38, ../sass/theme-slideshare.scss */
+.center-item audio {
+  width: 100%; }
+
+/* line 43, ../sass/theme-slideshare.scss */
+.veja-mais {
+  padding-bottom: 30px; }
+
+/* line 45, ../sass/theme-slideshare.scss */
+.veja-mais h2 {
+  color: #808080;
+  font-size: 19px;
+  font-weight: 700;
+  border-bottom: #808080 solid 5px;
+  margin-bottom: 20px; }
+
+/* line 54, ../sass/theme-slideshare.scss */
+#bt-fullScreen {
+  position: absolute;
+  right: 10px;
+  bottom: 10px; }
+
+/* line 60, ../sass/theme-slideshare.scss */
+.owl-apresentacao .owl-controls {
+  margin-top: 10px; }
+

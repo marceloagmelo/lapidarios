@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="br.com.prodevelopment.lapidarios.loja.model.Loja">
+		<field name="uuid" type="String" />
+		<field name="lojaId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="groupId" type="long" />
+		<field name="createUserId" type="long" />
+		<field name="modifiedUserId" type="long" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="razaoSocial" type="String">
+			<hint name="max-length">200</hint>
+		</field>
+		<field name="nomeFantasia" type="String">
+			<hint name="max-length">100</hint>
+		</field>
+		<field name="observacao" type="String" localized="true" />
+		<field name="cnpj" type="String" />
+		<field name="endLogradouro" type="String">
+			<hint name="max-length">100</hint>
+		</field>
+		<field name="endNumero" type="String" />
+		<field name="endComplemento" type="String" />
+		<field name="endCep" type="String" />
+		<field name="endBairro" type="String" />
+		<field name="endCidade" type="String" />
+		<field name="endUf" type="String">
+			<hint name="max-length">2</hint>
+		</field>
+		<field name="endPais" type="String" />
+		<field name="versao" type="double" />
+		<field name="ordemIndicada" type="int" />
+		<field name="ordemIndicadaAtual" type="boolean" />
+		<field name="status" type="int" />
+		<field name="statusByUserId" type="long" />
+		<field name="statusByUserName" type="String" />
+		<field name="statusDate" type="Date" />
+		<field name="classNameId" type="long" />
+		<field name="classPK" type="long" />
+	</model>
+</model-hints>

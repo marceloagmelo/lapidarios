@@ -1,0 +1,82 @@
+<div id="lista_conteudos">
+<%
+	PortletURL renderURL = renderResponse.createRenderURL();
+	renderURL.setParameter("categoryId", categoryId);
+	renderURL.setParameter("structureId", structureId);
+	renderURL.setParameter("tag", tag);
+
+	SearchContainer searchContainer = new SearchContainer(renderRequest, new DisplayTerms(renderRequest), null, SearchContainer.DEFAULT_CUR_PARAM, 1, renderURL, null, null);
+
+	DisplayTerms displayTerms = searchContainer.getDisplayTerms();
+	
+	String keywords = "";
+	List<JournalArticle> results = Search.buscarConteudos(keywords, themeDisplay.getCompanyId(),
+			themeDisplay.getScopeGroupId(),
+			GetterUtil.getLong(structureId),
+			searchContainer.getStart(), searchContainer.getEnd(),
+			categoryId, tag);
+
+	int total = Search.getTotalConteudo(keywords, themeDisplay.getCompanyId(),
+			themeDisplay.getScopeGroupId(),
+			GetterUtil.getLong(structureId),
+			categoryId, tag);
+	
+	searchContainer.setTotal(total);
+
+	searchContainer.setResults(results);
+	
+	addPortletURLs = JournalUtil.getAddPortletURLs(liferayPortletRequest, liferayPortletResponse, classNameIds, classTypeIds, allCategoryIds, null, null);
+	
+%>
+<div class="lfr-meta-actions add-asset-selector">
+		<%@ include file="/html/common/acoes.jspf" %>
+	</div>
+<%	
+	for (int i = 0; i < results.size(); i++) {
+		
+		JournalArticle article = (JournalArticle) results.get(i);
+		
+		JournalArticleDisplay articleDisplay = JournalArticleLocalServiceUtil
+				.getArticleDisplay(themeDisplay.getScopeGroupId(),
+						article.getArticleId(), "normal", "",
+						themeDisplay);		
+
+		String conteudo = articleDisplay.getContent();
+%>
+		<div class="journal-content-article">
+		<%=conteudo %>
+		</div>
+			<c:choose>
+				<c:when test="<%= showEditArticleIcon %>">
+					<div class="manutencao">
+						<div class="acao">
+							<c:if
+								test="<%=showEditArticleIcon %>">
+								<liferay-portlet:renderURL
+									windowState="<%= WindowState.MAXIMIZED.toString() %>"
+									var="editURL" portletName="<%= PortletKeys.JOURNAL %>">
+									<portlet:param name="struts_action" value="/journal/edit_article" />
+									<portlet:param name="redirect" value="<%= currentURL %>" />
+									<portlet:param name="originalRedirect"
+										value="<%= currentURL %>" />
+									<portlet:param name="groupId"
+										value="<%= String.valueOf(articleDisplay.getGroupId()) %>" />
+									<portlet:param name="articleId"
+										value="<%= articleDisplay.getArticleId() %>" />
+									<portlet:param name="version"
+										value="<%= String.valueOf(articleDisplay.getVersion()) %>" />
+								</liferay-portlet:renderURL>
+		
+								<liferay-ui:icon image="edit" message="edit-web-content"
+									url="<%= editURL %>" />
+							</c:if>
+						</div>
+					</div>
+				
+				</c:when>
+			</c:choose>		
+<%		
+	}
+%>
+<liferay-ui:search-paginator searchContainer="<%= searchContainer %>" type="simple" />
+</div>
