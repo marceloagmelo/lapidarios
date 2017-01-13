@@ -1,0 +1,37 @@
+<%@ include file="init.jsp" %>
+
+<div id="sb-site">
+
+<header id="top-internas">
+	<div class="container">
+		<h1 class="title-header">Compartilhar Oportunidade</h1>
+	</div>
+</header>
+
+<div id="content">
+	<div class="container">
+		<div class="page-share">
+			
+			<h2>Endereço da sua página</h2>
+			<div class="caixa-end-user">
+				<div id="copyTarget" class="endereco-user">www.lapidarios.com.vc/<%=lojaId %></div>
+			</div>
+
+			<hr>
+
+			<div class="caixa-compartilhe">
+				<h2>Compartilhe nas redes</h2>
+
+				<ul id="redes" class="reset">
+					<li><a href="#" class="btn-facebook bt-compartilhe"><i class="icon icon-facebook"></i> Facebook</a></li>
+					<li><a href="#" class="btn-linkedin bt-compartilhe"><i class="icon icon-linkedin"></i> Linkedin</a></li>
+					<li><a href="#" class="btn-twitter bt-compartilhe"><i class="icon icon-twitter"></i> Twitter</a></li>
+				</ul>
+				
+			</div>
+			
+		</div> <!-- .fim .page-share -->
+	</div>
+</div>
+
+</div> <!-- .fim div sb-site -->

@@ -1,0 +1,22 @@
+<%@ include file="/html/init.jsp" %>
+
+<%@page
+	import="com.liferay.portlet.journal.model.JournalArticleDisplay"%>
+
+<%@page
+	import="com.liferay.portlet.journalcontent.util.JournalContentUtil"%>
+<%@page
+	import="com.liferay.portlet.journalcontent.util.JournalContentUtil"%>
+<%@page import="br.com.prodevelopment.portlet.share.util.LojaIndicadaUtil" %>
+
+<%@page import="br.com.prodevelopment.lapidarios.lojaindicada.model.LojaIndicada" %>
+
+<%
+	long lojaIndicadaId = 0;
+	String lojaId = "";
+	LojaIndicada lojaIndicada = LojaIndicadaUtil.getLojaIndicada(themeDisplay.getCompanyId(), themeDisplay.getScopeGroupId());
+	if (Validator.isNotNull(lojaIndicada)) {
+		lojaId = lojaIndicada.getIdLoja();
+		lojaIndicadaId = lojaIndicada.getLojaIndicadaId();
+	}
+%>

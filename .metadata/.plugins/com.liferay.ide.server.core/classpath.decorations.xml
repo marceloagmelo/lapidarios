@@ -1,0 +1,334 @@
+<classpath>
+  <container id="associado-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-api.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-collections.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-beanutils.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-impl.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="login-hook!com.liferay.ide.eclipse.server.plugin.container/hook">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/struts-el.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/struts.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="portal-theme!com.liferay.ide.eclipse.server.plugin.container/theme">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="cadastro-clube-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-api.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-collections.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-beanutils.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j-extras.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-impl.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="evento-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-api.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-collections.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-beanutils.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j-extras.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-impl.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="loja-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-api.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-collections.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-beanutils.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j-extras.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-impl.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="loja-indicada-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-api.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-collections.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-beanutils.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-impl.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="share-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-api.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-collections.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-beanutils.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j-extras.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-impl.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location"></attribute>
+    </entry>
+  </container>
+  <container id="municipio-ibge-hook!com.liferay.ide.eclipse.server.plugin.container/hook">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/dom4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/struts-el.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/struts.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="contatos-hook!com.liferay.ide.eclipse.server.plugin.container/hook">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/struts-el.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/struts.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="slide-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-api.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/jstl-impl.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="link-produto-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+  <container id="contato-comigo-portlet!com.liferay.ide.eclipse.server.plugin.container/portlet">
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/commons-logging.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/log4j.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-bridges.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-java.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+    <entry id="/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/util-taglib.jar">
+      <attribute name="javadoc_location">null</attribute>
+    </entry>
+  </container>
+</classpath>

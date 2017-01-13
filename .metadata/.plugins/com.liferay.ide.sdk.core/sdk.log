@@ -1,0 +1,17 @@
+Buildfile: /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/portlets/share-portlet/build.xml
+deploy:
+    [mkdir] Created dir: /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/portlets/share-portlet/docroot/WEB-INF/classes
+     [copy] Copying 4 files to /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/portlets/share-portlet/docroot/WEB-INF/lib
+     [copy] Copying 1 file to /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/portlets/share-portlet/docroot/WEB-INF/tld
+     [copy] Copying 5 files to /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/portlets/share-portlet/docroot/WEB-INF/lib
+     [copy] Copying 1 file to /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/portlets/share-portlet/docroot/WEB-INF/classes
+     [copy] Copied 8 empty directories to 7 empty directories under /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/portlets/share-portlet/docroot/WEB-INF/classes
+    [javac] Compiling 2 source files to /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/portlets/share-portlet/docroot/WEB-INF/classes
+     [java] Loading jar:file:/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/portal-impl.jar!/system.properties
+     [java] Loading jar:file:/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/lib/portal-impl.jar!/portal.properties
+     [java] Loading file:/home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/tomcat-7.0.62/webapps/ROOT/WEB-INF/classes/portal-ext.properties
+     [java] Parsed /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/portlets/share-portlet/docroot/css/main.css in 4374 ms
+      [zip] Building zip: /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/dist/share-portlet-6.2.0.1.war
+     [copy] Copying 1 file to /home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/deploy
+BUILD SUCCESSFUL
+Total time: 7 seconds

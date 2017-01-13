@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.liferay.portal.model.PortalPreferences"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.liferay.portlet.PortalPreferences"/>
+<fullyQualifiedTypeName name="br.com.prodevelopment.lapidarios.portlet.lojaindicada.LojaIndicadaConstants"/>
+<fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.LocalizationUtil"/>
+<fullyQualifiedTypeName name="br.com.prodevelopment.lapidarios.portlet.lojaindicada.util.LojaIndicadaUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.exception.PortalException"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.StringUtil"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.exception.SystemException"/>
+<fullyQualifiedTypeName name="com.liferay.portal.model.Portlet"/>
+<fullyQualifiedTypeName name="com.liferay.portal.model.PortletPreferences"/>
+<fullyQualifiedTypeName name="javax.portlet.PortletPreferences"/>
+<fullyQualifiedTypeName name="br.com.prodevelopment.lapidarios.portlet.cadastroclube.CadastroClubeConstants"/>
+<fullyQualifiedTypeName name="br.com.prodevelopment.lapidarios.lojaindicada.service.LojaIndicadaLocalService"/>
+<fullyQualifiedTypeName name="br.com.prodevelopment.lapidarios.lojaindicada.service.LojaIndicadaLocalServiceUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.Validator"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.liferay.portal.service.UserLocalServiceUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.model.User"/>
+<fullyQualifiedTypeName name="br.com.prodevelopment.associado.service.AssociadoLocalServiceUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.util.PortalUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.TimeZoneUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.kernel.util.StringPool"/>
+<fullyQualifiedTypeName name="br.com.prodevelopment.lapidarios.contato.util.DateUtil"/>
+<fullyQualifiedTypeName name="br.com.prodevelopment.lapidarios.evento.util.DateUtil"/>
+</qualifiedTypeNameHistroy>

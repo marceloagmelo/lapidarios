@@ -1,0 +1,23 @@
+<%@ include file="/html/init.jsp" %>
+
+<%@page
+	import="com.liferay.portlet.journal.model.JournalArticleDisplay"%>
+
+<%@page
+	import="com.liferay.portlet.journalcontent.util.JournalContentUtil"%>
+<%@page
+	import="com.liferay.portlet.journalcontent.util.JournalContentUtil"%>
+<%@page import="br.com.prodevelopment.associado.model.Associado" %>
+<%@page import="br.com.prodevelopment.portlet.share.util.AssociadoUtil" %>
+
+<%
+	String lojaId = "";
+	long userId = themeDisplay.getUserId();
+	Associado associado = AssociadoUtil.getAssosiadoPorUsuario(userId);
+	if (Validator.isNotNull(associado)) {
+		lojaId = associado.getIdPolishop();
+	}
+	
+	String homeURL = themeDisplay.getPortalURL();//  "http://localhost:8080/home";
+	
+%>

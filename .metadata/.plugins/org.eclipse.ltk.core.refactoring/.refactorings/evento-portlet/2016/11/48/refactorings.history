@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;detalheEvento.jsp&apos; to &apos;listaevento&apos;&#x0A;- Original project: &apos;evento-portlet&apos;&#x0A;- Destination element: &apos;listaevento&apos;&#x0A;- Original element: &apos;detalheEvento.jsp&apos;" description="Copy file" element1="docroot/html/listaevento/detalheEvento.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1480197901319" target="/evento-portlet/docroot/html/listaevento" units="0" version="1.0"/>
+</session>

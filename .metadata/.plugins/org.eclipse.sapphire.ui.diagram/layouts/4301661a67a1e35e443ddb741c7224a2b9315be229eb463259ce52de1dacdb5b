@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram-geometry>
+    <node>
+        <id>Entity#Evento#0</id>
+        <bounds x="310" y="36"/>
+    </node>
+    <node>
+        <id>Entity#Local#1</id>
+        <bounds x="310" y="205"/>
+    </node>
+    <node>
+        <id>Entity#EventoAgenda#2</id>
+        <bounds x="173" y="120"/>
+    </node>
+    <node>
+        <id>Entity#EventoInscricao#3</id>
+        <bounds x="36" y="36"/>
+    </node>
+    <node>
+        <id>Entity#EventoNaoInscrito#4</id>
+        <bounds x="36" y="205"/>
+    </node>
+</diagram-geometry>
