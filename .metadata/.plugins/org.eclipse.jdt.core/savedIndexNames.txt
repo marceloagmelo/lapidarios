@@ -30,7 +30,6 @@ INDEX VERSION 1.126+/home/marcelo/projetos/lapidarios/workspace/.metadata/.plugi
 2235300866.index
 226754375.index
 868513641.index
-2537409179.index
 2013168717.index
 476788476.index
 4220997556.index
@@ -179,7 +178,6 @@ INDEX VERSION 1.126+/home/marcelo/projetos/lapidarios/workspace/.metadata/.plugi
 940110223.index
 1667195384.index
 655154356.index
-2938602246.index
 2659261192.index
 2681612469.index
 1593039240.index
