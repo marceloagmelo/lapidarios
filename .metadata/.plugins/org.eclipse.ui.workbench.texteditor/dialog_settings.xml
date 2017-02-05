@@ -13,18 +13,19 @@
 		<item value="false" key="isRegEx"/>
 		<item value="false" key="incremental"/>
 		<item value="false" key="wholeword"/>
-		<item value=".icon-arrow-left" key="selection"/>
+		<item value="showCreateAccountIcon" key="selection"/>
 		<list key="findhistory">
+			<item value="showCreateAccountIcon"/>
+			<item value="inscricaoURL"/>
+			<item value="enviarEmailParaResponsavel"/>
+			<item value="form"/>
+			<item value="value="/>
 			<item value=".icon-arrow-left"/>
 			<item value=".icon-arrow-left::before"/>
 			<item value="image"/>
-			<item value="ima"/>
-			<item value="hover"/>
-			<item value="especial"/>
-			<item value=".item-chamada a h2"/>
-			<item value="fora-caixa"/>
 		</list>
 		<list key="replacehistory">
+			<item value="class=&quot;&quot; value="/>
 			<item value="../../images"/>
 			<item value="../../"/>
 			<item value="LojaIndicada"/>

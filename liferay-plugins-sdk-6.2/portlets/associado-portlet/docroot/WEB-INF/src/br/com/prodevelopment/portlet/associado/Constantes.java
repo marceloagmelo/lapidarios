@@ -39,7 +39,7 @@ public class Constantes {
 	public static final String FORM_CONTATOS = "label.contatos";
 	
 	public static final String CAMPO_ASSOCIADO_ID = "associadoId";
-	public static final String CAMPO_NOME = "nome";
+	public static final String CAMPO_NOME = "nome";'
 	public static final String CAMPO_TIPO_PESSOA = "tipoPessoa";
 	public static final String CAMPO_OBSERVACAO = "observacao";
 	public static final String CAMPO_RG_INSCRICAO_MUN = "rgInscricaoMun";

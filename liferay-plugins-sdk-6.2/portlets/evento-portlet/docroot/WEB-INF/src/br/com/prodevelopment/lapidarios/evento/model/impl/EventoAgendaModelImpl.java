@@ -115,8 +115,8 @@ public class EventoAgendaModelImpl extends BaseModelImpl<EventoAgenda>
 		};
 	public static final String TABLE_SQL_CREATE = "create table evento_agenda (uuid_ VARCHAR(75) null,eventoAgendaId LONG not null primary key,companyId LONG,groupId LONG,createUserId LONG,modifiedUserId LONG,createDate DATE null,modifiedDate DATE null,dataEvento DATE null,horaEvento VARCHAR(75) null,qtdeVagas INTEGER,qtdeVagasPreenchida INTEGER,gratuito BOOLEAN,valor DOUBLE,userResponsavelId LONG,userResponsavelNome VARCHAR(75) null,eventoId LONG,eventoNome STRING null,localId LONG,localNome VARCHAR(75) null,observacao STRING null,versao DOUBLE,status INTEGER,statusByUserId LONG,statusByUserName VARCHAR(75) null,statusDate DATE null,classNameId LONG,classPK LONG)";
 	public static final String TABLE_SQL_DROP = "drop table evento_agenda";
-	public static final String ORDER_BY_JPQL = " ORDER BY eventoAgenda.eventoNome ASC, eventoAgenda.dataEvento ASC, eventoAgenda.horaEvento ASC";
-	public static final String ORDER_BY_SQL = " ORDER BY evento_agenda.eventoNome ASC, evento_agenda.dataEvento ASC, evento_agenda.horaEvento ASC";
+	public static final String ORDER_BY_JPQL = " ORDER BY eventoAgenda.dataEvento ASC, eventoAgenda.horaEvento ASC, eventoAgenda.eventoNome ASC";
+	public static final String ORDER_BY_SQL = " ORDER BY evento_agenda.dataEvento ASC, evento_agenda.horaEvento ASC, evento_agenda.eventoNome ASC";
 	public static final String DATA_SOURCE = "liferayDataSource";
 	public static final String SESSION_FACTORY = "liferaySessionFactory";
 	public static final String TX_MANAGER = "liferayTransactionManager";
@@ -1477,12 +1477,6 @@ public class EventoAgendaModelImpl extends BaseModelImpl<EventoAgenda>
 	public int compareTo(EventoAgenda eventoAgenda) {
 		int value = 0;
 
-		value = getEventoNome().compareTo(eventoAgenda.getEventoNome());
-
-		if (value != 0) {
-			return value;
-		}
-
 		value = DateUtil.compareTo(getDataEvento(), eventoAgenda.getDataEvento());
 
 		if (value != 0) {
@@ -1490,6 +1484,12 @@ public class EventoAgendaModelImpl extends BaseModelImpl<EventoAgenda>
 		}
 
 		value = getHoraEvento().compareTo(eventoAgenda.getHoraEvento());
+
+		if (value != 0) {
+			return value;
+		}
+
+		value = getEventoNome().compareTo(eventoAgenda.getEventoNome());
 
 		if (value != 0) {
 			return value;

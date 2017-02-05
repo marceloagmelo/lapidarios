@@ -104,9 +104,9 @@ public class EventoAgendaPersistenceImpl extends BasePersistenceImpl<EventoAgend
 			FINDER_CLASS_NAME_LIST_WITHOUT_PAGINATION, "findByUuid",
 			new String[] { String.class.getName() },
 			EventoAgendaModelImpl.UUID_COLUMN_BITMASK |
-			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK |
 			EventoAgendaModelImpl.DATAEVENTO_COLUMN_BITMASK |
-			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK);
+			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK |
+			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK);
 	public static final FinderPath FINDER_PATH_COUNT_BY_UUID = new FinderPath(EventoAgendaModelImpl.ENTITY_CACHE_ENABLED,
 			EventoAgendaModelImpl.FINDER_CACHE_ENABLED, Long.class,
 			FINDER_CLASS_NAME_LIST_WITHOUT_PAGINATION, "countByUuid",
@@ -901,9 +901,9 @@ public class EventoAgendaPersistenceImpl extends BasePersistenceImpl<EventoAgend
 			new String[] { String.class.getName(), Long.class.getName() },
 			EventoAgendaModelImpl.UUID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.COMPANYID_COLUMN_BITMASK |
-			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK |
 			EventoAgendaModelImpl.DATAEVENTO_COLUMN_BITMASK |
-			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK);
+			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK |
+			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK);
 	public static final FinderPath FINDER_PATH_COUNT_BY_UUID_C = new FinderPath(EventoAgendaModelImpl.ENTITY_CACHE_ENABLED,
 			EventoAgendaModelImpl.FINDER_CACHE_ENABLED, Long.class,
 			FINDER_CLASS_NAME_LIST_WITHOUT_PAGINATION, "countByUuid_C",
@@ -1481,9 +1481,9 @@ public class EventoAgendaPersistenceImpl extends BasePersistenceImpl<EventoAgend
 			EventoAgendaModelImpl.COMPANYID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.GROUPID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.STATUS_COLUMN_BITMASK |
-			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK |
 			EventoAgendaModelImpl.DATAEVENTO_COLUMN_BITMASK |
-			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK);
+			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK |
+			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK);
 	public static final FinderPath FINDER_PATH_COUNT_BY_CG = new FinderPath(EventoAgendaModelImpl.ENTITY_CACHE_ENABLED,
 			EventoAgendaModelImpl.FINDER_CACHE_ENABLED, Long.class,
 			FINDER_CLASS_NAME_LIST_WITHOUT_PAGINATION, "countByCG",
@@ -2370,8 +2370,8 @@ public class EventoAgendaPersistenceImpl extends BasePersistenceImpl<EventoAgend
 			EventoAgendaModelImpl.GROUPID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.DATAEVENTO_COLUMN_BITMASK |
 			EventoAgendaModelImpl.STATUS_COLUMN_BITMASK |
-			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK |
-			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK);
+			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK |
+			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK);
 	public static final FinderPath FINDER_PATH_COUNT_BY_CG_DATA = new FinderPath(EventoAgendaModelImpl.ENTITY_CACHE_ENABLED,
 			EventoAgendaModelImpl.FINDER_CACHE_ENABLED, Long.class,
 			FINDER_CLASS_NAME_LIST_WITHOUT_PAGINATION, "countByCG_Data",
@@ -3386,8 +3386,8 @@ public class EventoAgendaPersistenceImpl extends BasePersistenceImpl<EventoAgend
 			EventoAgendaModelImpl.EVENTOID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.DATAEVENTO_COLUMN_BITMASK |
 			EventoAgendaModelImpl.STATUS_COLUMN_BITMASK |
-			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK |
-			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK);
+			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK |
+			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK);
 	public static final FinderPath FINDER_PATH_COUNT_BY_CG_EVENTO_DATA = new FinderPath(EventoAgendaModelImpl.ENTITY_CACHE_ENABLED,
 			EventoAgendaModelImpl.FINDER_CACHE_ENABLED, Long.class,
 			FINDER_CLASS_NAME_LIST_WITHOUT_PAGINATION, "countByCG_Evento_Data",
@@ -5483,9 +5483,9 @@ public class EventoAgendaPersistenceImpl extends BasePersistenceImpl<EventoAgend
 			EventoAgendaModelImpl.GROUPID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.EVENTOID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.STATUS_COLUMN_BITMASK |
-			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK |
 			EventoAgendaModelImpl.DATAEVENTO_COLUMN_BITMASK |
-			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK);
+			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK |
+			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK);
 	public static final FinderPath FINDER_PATH_COUNT_BY_CG_EVENTOID = new FinderPath(EventoAgendaModelImpl.ENTITY_CACHE_ENABLED,
 			EventoAgendaModelImpl.FINDER_CACHE_ENABLED, Long.class,
 			FINDER_CLASS_NAME_LIST_WITHOUT_PAGINATION, "countByCG_EventoID",
@@ -7444,9 +7444,9 @@ public class EventoAgendaPersistenceImpl extends BasePersistenceImpl<EventoAgend
 			EventoAgendaModelImpl.GROUPID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.LOCALID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.STATUS_COLUMN_BITMASK |
-			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK |
 			EventoAgendaModelImpl.DATAEVENTO_COLUMN_BITMASK |
-			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK);
+			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK |
+			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK);
 	public static final FinderPath FINDER_PATH_COUNT_BY_CG_LOCALID = new FinderPath(EventoAgendaModelImpl.ENTITY_CACHE_ENABLED,
 			EventoAgendaModelImpl.FINDER_CACHE_ENABLED, Long.class,
 			FINDER_CLASS_NAME_LIST_WITHOUT_PAGINATION, "countByCG_LocalID",
@@ -9428,9 +9428,9 @@ public class EventoAgendaPersistenceImpl extends BasePersistenceImpl<EventoAgend
 			EventoAgendaModelImpl.GROUPID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.USERRESPONSAVELID_COLUMN_BITMASK |
 			EventoAgendaModelImpl.STATUS_COLUMN_BITMASK |
-			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK |
 			EventoAgendaModelImpl.DATAEVENTO_COLUMN_BITMASK |
-			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK);
+			EventoAgendaModelImpl.HORAEVENTO_COLUMN_BITMASK |
+			EventoAgendaModelImpl.EVENTONOME_COLUMN_BITMASK);
 	public static final FinderPath FINDER_PATH_COUNT_BY_CG_RESPONSAVELID = new FinderPath(EventoAgendaModelImpl.ENTITY_CACHE_ENABLED,
 			EventoAgendaModelImpl.FINDER_CACHE_ENABLED, Long.class,
 			FINDER_CLASS_NAME_LIST_WITHOUT_PAGINATION,

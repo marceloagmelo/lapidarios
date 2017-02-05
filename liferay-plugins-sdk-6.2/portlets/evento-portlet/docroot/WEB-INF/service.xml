@@ -155,9 +155,9 @@
 		<!-- Order -->
 
 		<order by="asc">
-			<order-column name="eventoNome" />
 			<order-column name="dataEvento" />
 			<order-column name="horaEvento" />
+			<order-column name="eventoNome" />
 		</order>
 
 		<!-- Finder methods -->

@@ -179,8 +179,9 @@ public class AgendaEventoUtil {
 		Map<String, EventoAgenda> map = new LinkedHashMap<String, EventoAgenda>();
 		
 		Date dataHoje = new Date();
+		Date dataAmanha = DateUtil.addDias(dataHoje, 1);
 		for (EventoAgenda eventoAgenda : lista) {
-			if (DateUtil.dataDiff(dataHoje, eventoAgenda.getDataEvento()) >= 0) {
+			if (DateUtil.dataDiff(dataAmanha, eventoAgenda.getDataEvento()) >= 0) {
 				StringBuffer sb = new StringBuffer();
 				sb.append(String.valueOf(eventoAgenda.getEventoId()));
 				sb.append(String.valueOf(eventoAgenda.getLocalId()));
@@ -406,8 +407,9 @@ public class AgendaEventoUtil {
 		Map<String, EventoAgenda> map = new LinkedHashMap<String, EventoAgenda>();
 		
 		Date dataHoje = new Date();
+		Date dataAmanha = DateUtil.addDias(dataHoje, 1);
 		for (EventoAgenda eventoAgenda : lista) {
-			if (DateUtil.dataDiff(dataHoje, eventoAgenda.getDataEvento()) >= 0) {
+			if (DateUtil.dataDiff(dataAmanha, eventoAgenda.getDataEvento()) >= 0) {
 			//if (dataHoje.before(eventoAgenda.getDataEvento())) {
 				StringBuffer sb = new StringBuffer();
 				sb.append(String.valueOf(eventoAgenda.getEventoId()));

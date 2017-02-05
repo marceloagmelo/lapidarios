@@ -21,11 +21,11 @@
 <fullyQualifiedTypeName name="com.liferay.portal.kernel.util.Validator"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="com.liferay.portal.service.UserLocalServiceUtil"/>
-<fullyQualifiedTypeName name="com.liferay.portal.model.User"/>
 <fullyQualifiedTypeName name="br.com.prodevelopment.associado.service.AssociadoLocalServiceUtil"/>
 <fullyQualifiedTypeName name="com.liferay.portal.util.PortalUtil"/>
 <fullyQualifiedTypeName name="com.liferay.portal.kernel.util.TimeZoneUtil"/>
 <fullyQualifiedTypeName name="com.liferay.portal.kernel.util.StringPool"/>
 <fullyQualifiedTypeName name="br.com.prodevelopment.lapidarios.contato.util.DateUtil"/>
 <fullyQualifiedTypeName name="br.com.prodevelopment.lapidarios.evento.util.DateUtil"/>
+<fullyQualifiedTypeName name="com.liferay.portal.model.User"/>
 </qualifiedTypeNameHistroy>

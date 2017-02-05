@@ -1577,12 +1577,6 @@ public class EventoAgendaClp extends BaseModelImpl<EventoAgenda>
 	public int compareTo(EventoAgenda eventoAgenda) {
 		int value = 0;
 
-		value = getEventoNome().compareTo(eventoAgenda.getEventoNome());
-
-		if (value != 0) {
-			return value;
-		}
-
 		value = DateUtil.compareTo(getDataEvento(), eventoAgenda.getDataEvento());
 
 		if (value != 0) {
@@ -1590,6 +1584,12 @@ public class EventoAgendaClp extends BaseModelImpl<EventoAgenda>
 		}
 
 		value = getHoraEvento().compareTo(eventoAgenda.getHoraEvento());
+
+		if (value != 0) {
+			return value;
+		}
+
+		value = getEventoNome().compareTo(eventoAgenda.getEventoNome());
 
 		if (value != 0) {
 			return value;
