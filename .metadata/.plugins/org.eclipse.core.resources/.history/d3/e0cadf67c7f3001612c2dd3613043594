@@ -48,9 +48,9 @@ if (!strutsAction.startsWith("/login/facebook_connect") && FacebookConnectUtil.i
 
 boolean showForgotPasswordIcon = false;
 
-//if (!strutsAction.equals("/login/forgot_password") && (company.isSendPassword() || company.isSendPasswordResetLink())) {
-	//showForgotPasswordIcon = true;
-//}
+if (!strutsAction.equals("/login/forgot_password") && (company.isSendPassword() || company.isSendPasswordResetLink())) {
+	showForgotPasswordIcon = true;
+}
 
 boolean showSignInIcon = false;
 
@@ -276,10 +276,11 @@ if (portletName.equals(PortletKeys.FAST_LOGIN)) {
 			<portlet:renderURL var="forgotPasswordURL">
 				<portlet:param name="struts_action" value="/login/forgot_password" />
 			</portlet:renderURL>
-			
+			<!--
 				<div class="footer-form">
 					<a href="<%= forgotPasswordURL %>"><span class="icon icon-question"></span>Esqueci a senha</a>
 				</div>
+			 -->
 			</c:if>
 		</div>
 		</div>

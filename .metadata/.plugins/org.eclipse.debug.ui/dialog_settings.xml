@@ -3,13 +3,13 @@
 	<section name="org.eclipse.debug.ui.sourcelookup.SourceLookupDialog">
 		<item value="615" key="DIALOG_WIDTH"/>
 		<item value="130" key="DIALOG_Y_ORIGIN"/>
-		<item value="446" key="DIALOG_HEIGHT"/>
 		<item value="376" key="DIALOG_X_ORIGIN"/>
+		<item value="446" key="DIALOG_HEIGHT"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.debug.ui.LAUNCH_CONFIGURATION_PROPERTIES_DIALOG_SECTION">
 		<item value="581" key="DIALOG_WIDTH"/>
-		<item value="626" key="DIALOG_HEIGHT"/>
+		<item value="640" key="DIALOG_HEIGHT"/>
 		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
 	</section>
 	<section name="org.eclipse.jdt.debug.ui.PROJECT_SELECTION_DIALOG_SECTION">

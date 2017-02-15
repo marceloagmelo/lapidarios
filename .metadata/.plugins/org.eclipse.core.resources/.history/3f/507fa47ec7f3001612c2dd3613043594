@@ -48,9 +48,9 @@ if (!strutsAction.startsWith("/login/facebook_connect") && FacebookConnectUtil.i
 
 boolean showForgotPasswordIcon = false;
 
-//if (!strutsAction.equals("/login/forgot_password") && (company.isSendPassword() || company.isSendPasswordResetLink())) {
-	//showForgotPasswordIcon = true;
-//}
+if (!strutsAction.equals("/login/forgot_password") && (company.isSendPassword() || company.isSendPasswordResetLink())) {
+	showForgotPasswordIcon = true;
+}
 
 boolean showSignInIcon = false;
 

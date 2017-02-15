@@ -1,5 +1,8 @@
-Buildfile: /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/hooks/build.xml
-create:
-     [copy] Copying 3 files to /home/marcelo/projetos/lapidarios/workspace/.metadata/.plugins/com.liferay.ide.sdk.core/create/1486301697943/termo-uso-hook
+Buildfile: /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/hooks/cadastro-portal-hook/build.xml
+deploy:
+    [mkdir] Created dir: /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/hooks/cadastro-portal-hook/docroot/WEB-INF/classes
+     [copy] Copying 5 files to /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/hooks/cadastro-portal-hook/docroot/WEB-INF/lib
+      [zip] Building zip: /home/marcelo/projetos/lapidarios/workspace/liferay-plugins-sdk-6.2/dist/cadastro-portal-hook-6.2.0.1.war
+     [copy] Copying 1 file to /home/marcelo/projetos/lapidarios/liferay-portal-6.2-ce-ga5/deploy
 BUILD SUCCESSFUL
-Total time: 979 milliseconds
+Total time: 1 second
